@@ -2,15 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#site_name {
-  text-align: left;
-  font-size: 40px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  text-shadow: 0 0 60px #fff;
-  max-width: 1000px;
-  margin: 0px auto;
-  margin-top: 45px;
+
+.container{
+
+}
+
+header {
+  background-color: #bb99ba91;
+}
+
+header::after{
+ content: '';
+  display: table;
+  clear: both;
+}
+
+logo {
+  float: left;
+  padding: 20px 0;
+}
+
+nav{
+  float: right;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin-left: 30px;
+  padding: 10px;
+
+  position: relative;
+}
+
+nav a{
+  color: white;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+
+}
+
+nav a:hover{
+  color: #a3acc1;
+  text-decoration: none;
+}
+
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #a3acc1;
+  position: absolute;
+  top: 0;
+  transition: 400ms;
+}
+
+nav a:hover::before{
+  width: 100%;
 }
