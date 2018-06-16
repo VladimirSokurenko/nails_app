@@ -12,11 +12,7 @@
       <nav>
 
         <ul>
-
-          <li><a href="/nails_app/contact">Contact Us</a></li>
-          <li><a href="/nails_app/about">About</a></li>
-          <li><a href="/nails_app/profile">Create master profile</a></li>
-
+          <li><button class="btn" href="/nails_app/profile">создать профиль мастера</button></li>
         </ul>
 
       </nav>
@@ -24,6 +20,59 @@
     </div>
 
   </header>
+
+  <div class="wrapper">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="#">Мастера</a></li>
+    <li role="presentation"><a href="#">Портфолио</a></li>
+  </ul>
+
+  <form class="navbar-form navbar-left" role="search">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Я ищу...">
+    </div>
+    <button type="submit" class="btn btn-default">Поиск</button>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Город
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Услуга
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Стиль
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+  </form>
+  </div>
 
 </body>
 
